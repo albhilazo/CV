@@ -1,0 +1,56 @@
+% v1.0.0
+\documentclass[10pt,a4paper,english]{article}
+
+\usepackage[left=3cm,top=3cm,right=3cm,bottom=3cm]{geometry} % Document margins
+\usepackage[utf8]{inputenc}  % Enable accented characters
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{enumitem}        % itemize separation
+\usepackage{hyperref}
+\usepackage{changepage}      % adjustwidth
+
+
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{25pt}{10pt}    % Defaults: {0pt}{15pt}{9pt}
+
+\begin{document}             % End of preamble and beginning of text.
+
+\input{./sections/personal}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Profile}
+\input{./sections/profile}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education and Certifications}
+\input{./sections/education}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Technical Skills}
+\input{./sections/tech_skills}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Professional Experience}
+\input{./sections/experience}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Languages}
+\input{./sections/languages}
+
+\end{document}               % End of document.
