@@ -1,4 +1,4 @@
-% v1.0.0
+% v1.0.2
 \documentclass[10pt,a4paper,english]{article}
 
 \usepackage[left=3cm,top=3cm,right=3cm,bottom=3cm]{geometry} % Document margins
@@ -6,13 +6,15 @@
 \usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{enumitem}        % itemize separation
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{changepage}      % adjustwidth
 
 
 \titleformat{\section}
   {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 \titlespacing*{\section}{0pt}{25pt}{10pt}    % Defaults: {0pt}{15pt}{9pt}
+
+\newcommand{\code}[1]{\texttt{#1}}
 
 \begin{document}             % End of preamble and beginning of text.
 
